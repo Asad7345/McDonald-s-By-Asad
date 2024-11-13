@@ -1,0 +1,35 @@
+ footer {
+    background-color: white;
+      padding: 20px 0;
+      row-gap: 20px;
+    
+    }
+    .prenavbar{
+        column-gap: 20px;
+        display: flex ;
+        gap: 350px;
+        align-items: center;
+    }
+    
+    .social-media a {
+      row-gap: 30px;
+      margin: 0px;
+      text-decoration: none;
+      color: black; /* Icon color */
+      font-size: 20px; /* Icon size */
+    }
+    
+    .social-media a:hover {
+      color: #ff0000; /* Change color on hover, adjust for each social media brand if needed */
+  
+    }
+    .list{
+      font-weight: 600;
+      
+    }
+   .overview{
+     display: flex;
+     gap: 200px;
+     text-wrap: nowrap;
+   }
+   

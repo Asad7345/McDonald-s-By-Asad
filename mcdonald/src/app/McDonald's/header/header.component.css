@@ -1,16 +1,16 @@
-.logo{
-    float: left;
-}
+
 .prenavbar{
     column-gap: 10px;
     display: flex ;
     gap: 400px;
     align-items: center;
+    margin-top: 20px;
 }
 .prenavbar1{
     display: flex ;
     gap: 20px;
     align-items: center;
+    
 }
 .prenavbar2{
       display: flex ;
@@ -48,10 +48,10 @@
 }
 .navbar-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 20px  ;
     background-color: #ff6600;
     color: black;
-    border-radius: 5px;
+    border-radius: 7px;
     text-decoration: none;
     margin-top: 10px;
   }

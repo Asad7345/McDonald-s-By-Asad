@@ -6,7 +6,7 @@ import { TrendingNowComponent } from './McDonald\'s/trending-now/trending-now.co
 
 const routes: Routes = [
   {
-    path: 'home', component:HomeComponent,
+    path: '', component:HomeComponent,
   },
   {
     path:'about-our-food', component:AboutourfoodComponent

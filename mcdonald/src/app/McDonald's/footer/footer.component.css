@@ -4,6 +4,11 @@
       row-gap: 20px;
     
     }
+    .links{
+      color: black;
+      text-decoration: none;
+  
+  }
     .prenavbar{
         column-gap: 20px;
         display: flex ;
@@ -34,10 +39,7 @@
       color: #ff0000; /* Change color on hover, adjust for each social media brand if needed */
   
     }
-    .list{
-      font-weight: 600;
-      
-    }
+   
    .overview{
      display: flex;
      gap: 250px;

@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
     {imgPath:'../../../assets/Images/Chick-Mac-D.png'},
     {imgPath:'../../../assets/Images/Happy-Menu-24-D.png'},
     {imgPath:'../../../assets/Images/Shakespresso-D.png'},
-    {imgPath:'../../../assets/Images/delivery-points-desktop-slider 33.png'}
+    {imgPath:'../../../assets/Images/delivery-points-desktop-slider 33.png'},
 
   ]
   constructor() { }

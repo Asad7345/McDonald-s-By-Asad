@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './McDonald\'s/home/home.component';
 import { AboutourfoodComponent } from './McDonald\'s/aboutourfood/aboutourfood.component';
 import { TrendingNowComponent } from './McDonald\'s/trending-now/trending-now.component';
+import { YourrighttoknowComponent } from './McDonald\'s/yourrighttoknow/yourrighttoknow.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,9 @@ const routes: Routes = [
   {
     path:'trending-now', component:TrendingNowComponent
   },
-  
+  {
+    path:'your-right-to-know', component:YourrighttoknowComponent
+  }
 ];
 
 @NgModule({

@@ -1,4 +1,12 @@
-
+.box-navbar{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 10px 0px rgba(188, 188, 188, 0.34);
+    
+}
+.logo{
+    margin: 10px 15px 10px 10px;
+}
 .prenavbar{
     column-gap: 10px;
     display: flex ;
@@ -20,7 +28,7 @@
 .navbar {
     display: flex ;
     gap: 30px;
-    
+    margin-top: 5px;
     align-items: center;
     list-style: none;
 }
@@ -53,7 +61,8 @@
     color: black;
     border-radius: 7px;
     text-decoration: none;
-    margin-top: 10px;
+    margin: 10px 10px 10px 20px;
+
   }
   
   .navbar-button:hover {

@@ -8,6 +8,9 @@ import { AboutourfoodComponent } from './McDonald\'s/aboutourfood/aboutourfood.c
 import { TrendingNowComponent } from './McDonald\'s/trending-now/trending-now.component';
 import { HomeComponent } from './McDonald\'s/home/home.component';
 import { YourrighttoknowComponent } from './McDonald\'s/yourrighttoknow/yourrighttoknow.component';
+import { SearchComponent } from './McDonald\'s/search/search.component';
+import { ContactUsComponent } from './McDonald\'s/contact-us/contact-us.component';
+
 
 
 
@@ -21,7 +24,10 @@ import { YourrighttoknowComponent } from './McDonald\'s/yourrighttoknow/yourrigh
     AboutourfoodComponent,
     TrendingNowComponent,
     HomeComponent,
-    YourrighttoknowComponent
+    YourrighttoknowComponent,
+    SearchComponent,
+    ContactUsComponent
+    
    
     
  

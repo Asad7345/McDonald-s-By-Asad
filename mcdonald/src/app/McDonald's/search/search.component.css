@@ -1,0 +1,60 @@
+ /* search box */
+ .Search-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15%;
+    margin-top: 30px;
+    align-items: center;
+    justify-items: center;
+  }
+.input-text{
+    margin: 0px 30px 30px 30px;  
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    height: 60px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    gap: 30px;
+      
+}
+/* Container Styling */
+.icon-input-container {
+    display: inline-flex; /* Align items horizontally */
+    align-items: center; /* Center align icon and input vertically */
+    margin-left: 20px;
+  }
+  
+  /* Icon Styling */
+  .icon-class {
+    font-size: 16px; /* Adjust the icon size */
+    margin-right: 8px; /* Add gap between icon and input */
+  }
+  
+  /* Input Styling */
+  .input-box {
+    border: none; /* Removes the border */
+    outline: none; /* Removes the blue outline when focused */
+    padding: 5px 10px; /* Adds inner spacing (optional) */
+    font-size: 14px; /* Adjusts font size */
+    flex-grow: 1; /* Allows the input to expand within the container */
+    
+  }
+.search-button{
+    background-color: #ffbb00;
+    color: #292929;
+    border-radius: 7px;
+    padding: 10px 10px 10px 20px;   
+    text-decoration: none;
+    border: 1px solid transparent; 
+    /* margin-right: 20px;    */
+
+} 

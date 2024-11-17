@@ -5,19 +5,22 @@
     
 }
 .logo{
-    margin: 10px 15px 10px 10px;
+    margin: 10px 0px 10px 10px;
 }
 .prenavbar{
     column-gap: 10px;
     display: flex ;
-    gap: 400px;
+    gap: 330px;
     align-items: center;
     margin-top: 20px;
+    
 }
 .prenavbar1{
     display: flex ;
     gap: 20px;
     align-items: center;
+    margin-left: 12px;
+    
     
 }
 .prenavbar2{
@@ -26,14 +29,27 @@
     align-items: center;
 }
 .navbar {
-    display: flex ;
+    /* display: flex ;
     gap: 30px;
-    margin-top: 5px;
+    margin-top: 25px;
     align-items: center;
+    list-style: none; */
+    display: flex;
+    flex-direction: row;
     list-style: none;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
 }
 .button{
-    display: inline-block;
+    /* display: inline-block; */
     
     background-color: #ff6600;
     color: white;
@@ -44,18 +60,9 @@
  .links{
     color: black;
     text-decoration: none;
-
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-    gap:0px;
-   
-    background-color: white;
-
 }
 .navbar-button {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px 20px 10px 20px  ;
     background-color: #ff6600;
     color: black;
@@ -64,7 +71,150 @@
     margin: 10px 10px 10px 20px;
 
   }
-  
+   
   .navbar-button:hover {
     background-color: #ff4500;
   }
+  /* hover menu starts */
+     /* Dropdown container */
+     .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown menu */
+    .dropdown-menu {
+      display: none; /* Hidden by default */
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      min-width: 600px; /* Adjust width for 3 columns */
+      z-index: 1000;
+      text-align: center;
+      text-decoration: none;
+      
+    }
+   
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* Dropdown grid styling */
+    .dropdown-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      grid-auto-rows: auto; /* Sets rows to be the same height */
+      gap: 20px; /* Space between items */
+      margin-bottom: 20px; /* Space for the button */
+    }
+
+    .dropdown-grid a {
+      color: #000;
+      /* padding: 10px 15px;
+      background-color: #f8f8f8; */
+      text-align: center;
+      /* border: 1px solid #ddd;
+      border-radius: 4px;
+      transition: background-color 0.3s ease; */
+    }
+
+    /* .dropdown-grid a:hover {
+      background-color: #f5f5f5;
+    } */
+
+    /* Centered button */
+    .dropdown-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: white;
+      color:#292929;
+      border:dotted;
+      border-width: 1px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-button:hover {
+      background-color: white;
+    }
+    /* Optional toggle symbol */
+.dropdown > a {
+  display: inline-flex; /* Enables Flexbox */
+  align-items: center; /* Aligns items vertically */
+  justify-content: center; /* Aligns items horizontally */
+  gap: 3px; /* Space between text and arrow */
+  text-decoration: none; /* Removes underline */
+  
+  
+ 
+}
+.dropdown > a::after {
+  content: ""; /* Use background-image instead of URL */
+  display: inline-block; /* Allows width and height */
+  background-position: center;
+  background-image: url('../../../assets/Images/down.png'); /* Replace with your image path */
+  background-size: contain; /* Resize while maintaining aspect ratio */
+  background-repeat: no-repeat;
+  width: 15px; /* Desired width */
+  height: 15px; /* Desired height */
+  margin-left: 3px; /* Space between text and arrow */
+  
+}
+
+.dropdown:hover > a::after {
+  background-image: url('../../../assets/Images/UP.png'); /* Change to upward arrow */
+}
+
+
+  /* for underlined red me */
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #000; /* text color */
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -25px; /* adjust to your taste */
+    width: 0;
+    height: 5px; /* underline thickness */
+    background-color: #e42a09; /* underline color */
+    /* transition: width 0.2s ease-in-out; */
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+.dropdown-grid-link{
+  display: flex; /* Enables Flexbox for child alignment */
+  flex-direction: column; /* Aligns image and text vertically */
+  justify-content: center; /* Centers content vertically in the cell */
+  align-items: center; /* Centers content horizontally in the cell */
+  text-align: center; /* Centers text inside the link */
+  background-color:transparent; /* Example background for visual clarity */
+  /* padding: 10px; Adds space inside each cell */
+ text-wrap: nowrap;
+ gap: 20px;
+ 
+  
+  
+}
+.dropdown-grid-link span {
+  font-size: 14px; /* Text size */
+  font-weight: bold; /* Text weight */
+  color: #333; /* Text color */
+}
+.dropdown-image{
+  width: 70px ;
+  height: 70px;
+  ;
+  object-fit: cover;
+}

@@ -1,0 +1,77 @@
+h1{
+    color: red;
+    font-size: 4em;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+    word-spacing: 10px;
+
+  }
+  .Image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-bottom: 50px;
+  }
+
+
+
+
+
+
+
+
+
+  /* Container for Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 3 columns */
+    gap: 20px;  /* Space between cards */
+    padding: 20px;
+    margin: 50px 0px 75px 0px;
+    align-items: center;
+  }
+
+  .card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* padding: 20px; */
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  } 
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-content{
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+  .card-title{
+    font-size: 28.5px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    color: #db0007;
+    font-weight: 800;
+ 
+  }
+  .card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffbb00;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card-button:hover {
+    background-color: #ffbb00;
+  }

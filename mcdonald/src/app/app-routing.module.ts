@@ -6,6 +6,7 @@ import { TrendingNowComponent } from './McDonald\'s/trending-now/trending-now.co
 import { YourrighttoknowComponent } from './McDonald\'s/yourrighttoknow/yourrighttoknow.component';
 import { SearchComponent } from './McDonald\'s/search/search.component';
 import { ContactUsComponent } from './McDonald\'s/contact-us/contact-us.component';
+import { OurFamilyComponent } from './McDonald\'s/our-family/our-family.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,9 @@ const routes: Routes = [
   {
     path:'contact-us', component:ContactUsComponent
   },
+  {
+    path:'our-family', component:OurFamilyComponent
+  }
 ];
 
 @NgModule({

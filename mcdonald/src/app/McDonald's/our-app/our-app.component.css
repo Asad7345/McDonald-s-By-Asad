@@ -8,6 +8,7 @@ h1{
     word-spacing: 10px;
 
   }
+
   .Image{
     width: 100%;
     display: flex;
@@ -16,16 +17,44 @@ h1{
    
     margin-bottom: 50px;
   }
+  .box-1{
+    display: flex;
+    gap: 40px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    overflow: hidden;
+    box-shadow: none;
+    border: none;
+    
+  }
+.box-content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+h2{
+    color: #db0007;
+    font-size: 45px;
+    font-weight: bold;
+}
+.box2{
+    margin-top: 50px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.box-content2{
+    display: flex;
+    flex-direction: column;
+     text-align: start;
+     align-items: flex-start;
+     justify-content: center;
+  
+  
 
-
-
-
-
-
-
-
-
-  /* Container for Cards */
+}
 .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);  /* 3 columns */
@@ -36,7 +65,9 @@ h1{
   }
 
   .card{
-    border: 1px solid #ddd;
+    width: 555px;
+    
+    border: 1px solid #ddddddc5;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -54,11 +85,13 @@ h1{
     justify-content: space-evenly;
   }
   .card-title{
-    font-size: 28.5px;
+    font-size: 28px;
     margin-bottom: 20px;
     padding-top: 30px;
     color: #db0007;
     font-weight: 800;
+    
+    text-wrap: nowrap;
  
   }
   .card-button {

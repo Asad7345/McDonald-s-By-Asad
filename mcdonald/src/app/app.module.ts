@@ -11,7 +11,7 @@ import { YourrighttoknowComponent } from './McDonald\'s/yourrighttoknow/yourrigh
 import { SearchComponent } from './McDonald\'s/search/search.component';
 import { ContactUsComponent } from './McDonald\'s/contact-us/contact-us.component';
 import { OurFamilyComponent } from './McDonald\'s/our-family/our-family.component';
-
+import { OurAppComponent } from './McDonald\'s/our-app/our-app.component';
 
 
 
@@ -29,7 +29,10 @@ import { OurFamilyComponent } from './McDonald\'s/our-family/our-family.componen
     YourrighttoknowComponent,
     SearchComponent,
     ContactUsComponent,
-    OurFamilyComponent
+    OurFamilyComponent,
+    OurAppComponent
+    
+
     
    
     

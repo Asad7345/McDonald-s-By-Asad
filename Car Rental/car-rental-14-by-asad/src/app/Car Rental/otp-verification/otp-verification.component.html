@@ -1,25 +1,25 @@
 <div class="container">
     <div class="imagelog">
-        <img src="../../../assets/car-renatl-sharing-data/Cover@2x.png"  alt="...">
+        <img src="../../../assets/car-renatl-sharing-data/Cover@2x.png" alt="...">
     </div>
     <div class="formbody" >
         <div class="logo-header" >
             <div><img src="../../../assets/car-renatl-sharing-data/header-logo.png" alt="footer-logo"></div>
             <div class="logo-text">
-                <h3>Forget your Account?</h3>
-                <p>Please enter your registered email.</p>
+                <h3>OTP Verification</h3>
+                <p>Please enter your Code.</p>
             </div>
             <div class="login-form" >
                 <form action="#" method="POST">
                    
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                        <label for="email">Otp Verification</label>
+                        <ng-otp-input  (onInputChange)="onOtpChange($event)"  [config]="{length:5}"></ng-otp-input>
                     </div>
                     
                    
                     <div class="form-group">
-                        <button type="submit" (click)="onNavigate()">Continue</button>
+                        <button type="submit" (click)="onNavigate()" >Verify</button>
                     </div>
                     
                 </form>

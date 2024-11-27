@@ -1,0 +1,223 @@
+body{
+  background-color: rgb(248, 251, 253)
+  ;
+}
+/* Card on image starts */
+.image-card-container {
+    position: relative; /* Enables positioning of child elements relative to this container */
+    display: inline-block; /* Ensures the container fits the image dimensions */
+    width: 100%; /* Example width for the container */
+    height: 100%; /* Example height for the container */
+  }
+  
+  /* Background Image */
+  .background-image {
+    width: 100%; /* Ensures the image fits the container's width */
+    height: 100%; /* Ensures the image fits the container's height */
+    object-fit: cover;
+    display: block; 
+  }
+  
+  /* Card */
+  .card {
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    border: 1px solid transparent;
+    position: absolute; /* Positions the card relative to the container */
+    bottom: -0%; /* Positions the card above the bottom of the container */
+    right: -10px; /* Aligns the card to the right side */
+    background-color: transparent; /* Transparent background */
+    padding: 30px; /* Adds space inside the card */
+    border-radius: 8px; /* Rounds the card corners */
+    width: 180px; /* Sets the width of the card */
+    height: 200px;
+    margin-right: 70px; /* Space from the right edge */
+    margin-top: 200px;
+    margin-bottom: 50px;
+    
+  }
+  
+  .card-title {
+    font-weight: 750;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Text */
+  .card-content {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .card-text {
+    margin-top: 20px;
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+  
+  /* Card Button */
+  .card-button {
+    padding: 10px 40px;
+    background-color:#0961e4;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  /* Card on image ends */
+  
+  
+ 
+  
+  
+  /* Responsive media query for medium screens (700px to 1200px) */
+  @media only screen and (min-width: 700px) and (max-width: 1200px) {
+   
+  }
+  .image-card-container2 {
+    position: relative; /* Enables positioning of child elements relative to this container */
+    display: inline-block; /* Ensures the container fits the image dimensions */
+    width: 100%; /* Example width for the container */
+    height: 100%; /* Example height for the container */
+  background-color: whitesmoke;  
+  
+}
+  
+  /* Background Image */
+  .background-image2 {
+    width: 100vh; /* Ensures the image fits the container's width */
+    height: 100%; /* Ensures the image fits the container's height */
+    object-fit: cover;
+    display: block; 
+    
+  }
+  
+  /* Card */
+  .card2 {
+    
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    border: 1px solid transparent;
+    position: absolute; /* Positions the card relative to the container */
+    bottom: 9%; /* Positions the card above the bottom of the container */
+    right: 250px; /* Aligns the card to the right side */
+    background-color: transparent; /* Transparent background */
+    padding: 30px; /* Adds space inside the card */
+    border-radius: 8px; /* Rounds the card corners */
+    width: 280px; /* Sets the width of the card */
+    height: 230px;
+    margin-right: 70px; /* Space from the right edge */
+    margin-top: 200px;
+    margin-bottom: 50px;
+    
+  }
+  
+  .card-title2 {
+    font-weight: 800;
+    font-size: 2em;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Text */
+  .card-content2 {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .card-text2 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  /* Card Button */
+/* 300px to 700px */
+@media only screen and (max-width: 700px) {
+  .image-card-container, .image-card-container2 {
+      width: 100%;
+      height: auto; /* Allow image containers to adjust dynamically */
+  }
+
+  .background-image, .background-image2 {
+      width: 100%; /* Scale images to fit screen width */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .card, .card2 {
+      position: static; /* Remove absolute positioning for stacking */
+      width: 90%; /* Reduce card width */
+      height: auto; /* Adjust card height dynamically */
+      margin: 20px auto; /* Center cards with margin */
+      text-align: center; /* Center text content */
+  }
+
+  .card-title, .card-title2 {
+      font-size: 1.4em; /* Adjust font size for better readability */
+  }
+
+  .card-text, .card-text2 {
+      font-size: 1em; /* Reduce font size */
+      margin-bottom: 20px; /* Adjust spacing */
+  }
+
+  .card-button {
+      padding: 8px 20px; /* Smaller button for smaller screens */
+  }
+}
+
+/* 700px to 1200px */
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .image-card-container, .image-card-container2 {
+      width: 100%;
+      height: auto;
+  }
+
+  .background-image {
+      width: 95%; /* Slight reduction in image size */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto; /* Center the image */
+  }
+
+  .background-image2 {
+      width: 100%; /* Ensure it spans the container */
+      height: auto;
+      margin: 0 auto;
+  }
+
+  .card {
+      width: 220px; /* Adjust width for medium screens */
+      height: 180px; /* Moderate height adjustment */
+      margin-right: 40px; /* Adjust spacing */
+      margin-top: 150px;
+  }
+
+  .card2 {
+      width: 260px; /* Adjust width for the second card */
+      height: 200px;
+      margin-right: 40px;
+  }
+
+  .card-title, .card-title2 {
+      font-size: 1.6em; /* Increase title size for better readability */
+  }
+
+  .card-text, .card-text2 {
+      font-size: 1.1em; /* Adjust font size for medium screens */
+  }
+
+  .card-button {
+      padding: 10px 30px; /* Moderate button size for medium screens */
+  }
+}
+
+  /* Card on image ends */
+  /* .images-link{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px 30px;
+    margin: 50px;
+  }
+  .links{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+  } */

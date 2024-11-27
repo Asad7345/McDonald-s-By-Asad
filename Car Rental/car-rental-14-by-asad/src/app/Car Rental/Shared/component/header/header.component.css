@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+.header-logo img {
+  width: 85%;
+  height: 100%;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 60px;
+}
+
+/* For underlined hover effect */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #000; /* text color */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -18px; /* adjust to your taste */
+  width: 0;
+  height: 5px; /* underline thickness */
+  background-color: #0961e4; /* underline color */
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Responsive Design: 300px - 700px */
+@media (max-width: 700px) {
+  .container {
+      flex-wrap: wrap;
+      padding: 10px 20px; /* Reduced padding for smaller screens */
+      text-align: center;
+  }
+
+  .header-logo {
+      flex: 1 1 100%;
+      margin-bottom: 10px;
+  }
+
+  .header-logo img {
+      width: 60%; /* Adjusted size for smaller screens */
+  }
+
+  .navbar-link {
+      flex: 1 1 100%;
+      flex-direction: column; /* Stack links vertically */
+      row-gap: 15px; /* Added spacing between links */
+      column-gap: 0; /* No horizontal spacing */
+  }
+
+  .nav-link {
+      font-size: 14px; /* Smaller font for small screens */
+  }
+
+  .container > div:last-child {
+      flex: 1 1 100%;
+      margin-top: 10px;
+  }
+
+  .container > div:last-child img {
+      width: 25px; /* Adjusted user icon size */
+      height: auto;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  .container {
+      flex-wrap: wrap;
+      padding: 10px 40px; /* Slightly reduced padding for medium screens */
+      justify-content: space-between; /* Ensures even spacing */
+  }
+
+  .header-logo img {
+      width: 70%; /* Moderate size adjustment */
+      height: auto;
+  }
+
+  .navbar-link {
+      flex-direction: row; /* Ensure links stay in a row */
+      column-gap: 40px; /* Adjust gap between links */
+  }
+
+  .nav-link {
+      font-size: 16px; /* Maintain readability for medium screens */
+  }
+
+  .container > div:last-child img {
+      width: 30px; /* Moderate size adjustment for user icon */
+      height: auto;
+  }
+}

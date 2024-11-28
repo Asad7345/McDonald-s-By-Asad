@@ -1,0 +1,48 @@
+<div class="images-link">
+    <div><a href="#" class="links">Popular Car</a></div>
+    <div><a href="#" class="links">View All</a></div>
+</div>
+<section class="container">
+    
+    <div class="card" *ngFor="let item of CardDatas">
+        <div class="card-title">
+            <div >
+                <div class="card-title2">
+                    <h3>{{item.carname}}</h3>
+                    <p >{{item.cartype}}</p>
+                </div>
+            </div>
+            <div class="card-title-img"><img src="../../../../../assets/car-renatl-sharing-data/car-renatl-sharing-data/heart.png" alt="heart"></div>
+        </div>
+        <div class="card-image">
+            <img src="{{item.carimage}}" alt="car">
+        </div>
+        <div class="card-icons">
+            <div class="image-container">
+                <img src="../../../../../assets/car-renatl-sharing-data/gas-station.png" alt="gas-station" class="centered-image">
+                <span class="centered-text">{{item.carmilage}}
+                </span>
+            </div>
+            <div class="image-container">
+                <img src="../../../../../assets/car-renatl-sharing-data/manual.png" alt="manual" class="centered-image">
+                <span class="centered-text">Manual</span>
+            </div>
+            <div class="image-container">
+                <img src="../../../../../assets/car-renatl-sharing-data/profile-2user.png" alt="Description" class="centered-image">
+                <span class="centered-text">4 People</span>
+            </div>
+            
+            
+        </div>
+        <div class="card-price-btn">
+            <div class="card-price">
+                <span class="card-price1">pkr.</span>
+                <span class="card-price2">{{item.carprice}}</span>
+                <span class="card-price3">days</span>
+            </div>
+            <div >
+                <button class="card-button">Rent Now</button>
+            </div>
+        </div>
+    </div>
+</section>

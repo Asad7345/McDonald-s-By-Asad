@@ -13,6 +13,8 @@ import { NgOtpInputModule } from 'ng-otp-input';
 import { HeaderComponent } from './Car Rental/Shared/component/header/header.component';
 import { FooterComponent } from './Car Rental/Shared/component/footer/footer.component';
 import { HomeComponent } from './Car Rental/Shared/component/home/home.component';
+import { CardsComponent } from './Car Rental/Shared/component/cards/cards.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { HomeComponent } from './Car Rental/Shared/component/home/home.component
     OtpVerificationComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    CardsComponent,
+  
   ],
   imports: [
     BrowserModule,

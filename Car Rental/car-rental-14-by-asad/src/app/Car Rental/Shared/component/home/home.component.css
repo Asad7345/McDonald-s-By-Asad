@@ -78,7 +78,7 @@
   
   /* Background Image */
   .background-image2 {
-    width: 100vh; /* Ensures the image fits the container's width */
+    width: 50%; /* Ensures the image fits the container's width */
     height: 100%; /* Ensures the image fits the container's height */
     object-fit: cover;
     display: block; 
@@ -116,6 +116,7 @@
   .card-content2 {
     align-items: center;
     justify-content: space-evenly;
+    margin-left: 40px;
   }
   
   .card-text2 {
@@ -137,6 +138,9 @@
  justify-content: center;
  max-width: 80%;
  max-height: 50%;
+ background-color: white;
+ margin-bottom: 30px;
+ padding-bottom: 20px;
 }
 .fell-div-heading h1{
   font-size: 2.5em;
@@ -197,30 +201,59 @@
   
   .card-title3 {
     font-weight: 800;
-    font-size: 30px;
+    font-size: 25px;
     word-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-wrap: nowrap;
     text-align: center; /* Center text horizontally */ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    color: #0961e4;
+    
   }
   
   /* Card Text */
   .card-content3 {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     justify-content: space-evenly;
+    margin-right: 60px;
   }
   
   .card-text3 {
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   
-  /* Card Button */
+  /* last box */
+  .last-box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 80px;
+
+  }
+.last-box2{
+  background-image: url('../../../../../assets/car-renatl-sharing-data/car-renatl-sharing-data/subscribe-bg-img.jpg');
+  background-size: cover; /* Cover the entire div with the image */
+  background-position: center; /* Center the image within the div */
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  width: 95%;
+  height: 400px;
+}
+.last-box-text{
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 60px ;
+}
 /* 300px to 700px */
 @media only screen and (max-width: 700px) {
   .image-card-container {
@@ -314,4 +347,80 @@
 }
 
   /* Card on image ends */
+  /* last box input */
+.container8{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+}
+.container8-p{
+  font-size: 1.3em;
+  margin: 20px 0px 5px 30px;
+}
+  .Search-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    align-items: center;
+    justify-items: start;
+    
+  }
+.input-text{
+  background-color: #ffffff;
+    margin: 20px 0px 20px 20px;  
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius:10px;
+    width: 600px;
+    font-family: Arial, sans-serif;
+    height: 60px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   
+    gap: 30px;
+      
+}
+/* Container Styling */
+.icon-input-container {
+    display: inline-flex; /* Align items horizontally */
+    align-items: center; /* Center align icon and input vertically */
+    margin-left: 20px;
+  }
+  
+  /* Icon Styling */
+  .icon-class {
+    font-size: 16px; /* Adjust the icon size */
+    margin-right: 8px; /* Add gap between icon and input */
+  }
+  
+  /* Input Styling */
+  .input-box {
+    border: none; /* Removes the border */
+    outline: none; /* Removes the blue outline when focused */
+    padding: 5px 10px; /* Adds inner spacing (optional) */
+    font-size: 14px; /* Adjusts font size */
+    flex-grow: 1; /* Allows the input to expand within the container */
+    
+  }
+.search-button{
+    background-color: #002fff;
+    color: #ffffff;
+    border-radius: 7px;
+    padding: 15px 35px 15px 35px;
+    text-decoration: none;
+    border: 1px solid transparent; 
+    margin-right: 20px;   
+    cursor: pointer;
+} 
+.last-box-text-content{
+ margin-left: 30px;
+}
+/* last box input end */

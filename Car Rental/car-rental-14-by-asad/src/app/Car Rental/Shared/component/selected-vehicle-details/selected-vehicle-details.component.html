@@ -1,0 +1,191 @@
+<div class="container">
+    <div class="container-1">
+        <div>
+            <div>
+                <div>
+                    <img [src]="mainImage" alt="Main Image" class="main-image">
+                </div>
+
+
+                <div class="child-images">
+                    <div *ngFor="let item of images">
+                        <img [src]="item.img" alt="Child Image" class="child-image" (click)="onChangeImage(item.img)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card of car details -->
+        <div>
+            <div class="card">
+                <div>
+                    <div>
+                        <div class="card-1">
+                            <div>
+                                <h2 class="card-title">Nissan GT-R</h2>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span>&#9733;</span>
+                                </div>
+                            </div>
+                            <div class="card-1-img">
+                                <img src="../../../../../assets/car-renatl-sharing-data/car-renatl-sharing-data/web-pages/car-renatl-sharing-data/Like.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="card-paragraph">
+                            <p>NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most
+                                unforgiving proving ground,the "race track".</p>
+                        </div>
+                        <div class="car-details">
+                            <div>
+                                <div class="car-details-1">
+
+                                    <div class="card-detail-title">
+                                        <p>Type Car</p>
+                                        <p>Steering</p>
+                                    </div>
+
+                                    <div class="card-detail-content">
+                                        <p>Sport</p>
+                                        <p>Manual</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="car-details-1">
+                                    <div class="card-detail-title">
+                                        <p>Capacity</p>
+                                        <p>Gasoline</p>
+                                    </div>
+                                    <div class="card-detail-content">
+                                        <p>2 Person</p>
+                                        <p>70L</p>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card-price-btn">
+                                <div class="card-price">
+                                    <span class="card-price1">$</span>
+                                    <span class="card-price2">100/</span>
+                                    <span class="card-price3">days</span>
+                                </div>
+                                <div>
+                                    <button class="card-button">Rent Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Review-box">
+        <div class="Review-title">
+            <h3>Review</h3>
+            <p class="Reviewbox">13</p>
+        </div>
+        <div>
+            <div class="card-review">
+
+                <div class="Review-1">
+                    <div class="Review-box-img"><img src="../../../../../assets/car-renatl-sharing-data/user.png"
+                            alt=""></div>
+                    <div class="card-review-content">
+                        <div class="card-detail-content2">
+                            <h4>Alex Stanton</h4>
+                            <p style="color:rgb(163, 159, 159) ; ">CEO at ABC</p>
+                        </div>
+                        <div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="Review-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, similique dolore! Nulla ullam
+                        officia libero, impedit adipisci amet, nam porro, reprehenderit ipsa mollitia explicabo. Impedit
+                        voluptates dolor aspernatur totam temporibus.
+                    </p>
+                </div>
+
+            </div>
+            <div class="card-review">
+
+                <div class="Review-1">
+                    <div class="Review-box-img"><img src="../../../../../assets/car-renatl-sharing-data/user.png"
+                            alt=""></div>
+                    <div class="card-review-content">
+                        <div class="card-detail-content2">
+                            <h4>Alex Stanton</h4>
+                            <p style="color:rgb(163, 159, 159) ; ">CEO at ABC</p>
+                        </div>
+                        <div>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="Review-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, similique dolore! Nulla ullam
+                        officia libero, impedit adipisci amet, nam porro, reprehenderit ipsa mollitia explicabo. Impedit
+                        voluptates dolor aspernatur totam temporibus.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="Review-box-link">
+            <a href="#">Show All</a>
+        </div>
+    </div>
+    <div>
+        <div class="images-link">
+            <div><a href="#" class="links2">Recent Car</a></div>
+            <div><a href="#" class="links">View All</a></div>
+        </div>
+        <div>
+            <app-cards [CardDatas]="cardDatas"></app-cards>
+        </div>
+    </div>
+    <div>
+        <div class="images-link">
+            <div><a href="#" class="links2">Top Rated</a></div>
+            <div><a href="#" class="links">View All</a></div>
+        </div>
+        <div>
+            <app-cards [CardDatas]="cardData"></app-cards>
+        </div>
+    </div>
+</div>

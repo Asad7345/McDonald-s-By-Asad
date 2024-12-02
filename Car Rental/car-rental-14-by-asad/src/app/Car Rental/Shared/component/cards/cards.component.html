@@ -1,7 +1,4 @@
-<div class="images-link">
-    <div><a href="#" class="links">Popular Car</a></div>
-    <div><a href="#" class="links">View All</a></div>
-</div>
+
 <section class="container">
     
     <div class="card" *ngFor="let item of CardDatas">
@@ -29,7 +26,7 @@
             </div>
             <div class="image-container">
                 <img src="../../../../../assets/car-renatl-sharing-data/profile-2user.png" alt="Description" class="centered-image">
-                <span class="centered-text">4 People</span>
+                <span class="centered-text">{{item.personsit}}</span>
             </div>
             
             

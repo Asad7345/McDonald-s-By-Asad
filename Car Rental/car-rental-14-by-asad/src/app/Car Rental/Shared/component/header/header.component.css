@@ -43,39 +43,54 @@
 /* Responsive Design: 300px - 700px */
 @media (max-width: 700px) {
   .container {
-      flex-wrap: wrap;
-      padding: 10px 20px; /* Reduced padding for smaller screens */
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; */
+      flex-wrap: nowrap;
+      padding: 10px 10px; /* Reduced padding for smaller screens */
       text-align: center;
+      justify-content: space-between;
+      gap: 10px;
+      
   }
 
   .header-logo {
-      flex: 1 1 100%;
+      /* flex: 1 1 100%; */
+      /* display: none; */
       margin-bottom: 10px;
   }
 
   .header-logo img {
-      width: 60%; /* Adjusted size for smaller screens */
+      width: 50px;
+      padding-top: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      justify-content: center; /* Adjusted size for smaller screens */
   }
 
   .navbar-link {
-      flex: 1 1 100%;
-      flex-direction: column; /* Stack links vertically */
-      row-gap: 15px; /* Added spacing between links */
-      column-gap: 0; /* No horizontal spacing */
+      /* flex: 1 1 100%; */
+      flex-direction: row; /* Stack links vertically */
+       /* Added spacing between links */
+    column-gap: 10px; /* No horizontal spacing */
   }
 
   .nav-link {
       font-size: 14px; /* Smaller font for small screens */
+      text-wrap: nowrap;
+
   }
 
   .container > div:last-child {
-      flex: 1 1 100%;
-      margin-top: 10px;
+      /* flex: 1 1 100%; */
+      margin-top: 20px;
   }
 
   .container > div:last-child img {
       width: 25px; /* Adjusted user icon size */
       height: auto;
+      margin-bottom: 15px;
   }
 }
 @media (min-width: 700px) and (max-width: 1200px) {

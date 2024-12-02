@@ -72,16 +72,20 @@
   .footer-part1 {
       flex-direction: column; /* Stack paragraph and columns vertically */
       align-items: center; /* Center-align content */
-      gap: 20px;
+      justify-content: center;
+      gap: 15px;
   }
 
   .footer-paragraph {
+    
+  display: none;
       text-align: center; /* Center the paragraph */
   }
 
   .list-container {
       grid-template-columns: 1fr; /* Single column layout */
-      text-align: center; /* Center-align list items */
+      text-align: center  ; /* Center-align list items */
+     
   }
 
   .list h3 {
@@ -96,12 +100,24 @@
 /* For screens between 700px and 1200px */
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
   .footer-part1 {
+    
       flex-direction: row; /* Keep paragraph and lists in a row */
       align-items: flex-start;
+      
+  }
+  .footer-paragraph{
+    display: none;
+  }
+  .container{
+    max-width: 800px;
+    max-height: 400px;
   }
 
   .list-container {
-      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+      grid-template-columns: repeat(3, 1fr);
+       /* Two columns for medium screens */
+       gap: 190px;
+       /* justify-content: ; */
   }
 
   .list h3 {

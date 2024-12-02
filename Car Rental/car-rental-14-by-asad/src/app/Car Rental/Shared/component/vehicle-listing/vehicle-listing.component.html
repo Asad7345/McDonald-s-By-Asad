@@ -1,0 +1,88 @@
+<div>
+    <div class="container1">
+        <div class="container">
+            <form >
+                <div class="filter-1">
+                    <label for="make" class="label-text">Make</label>
+                    <select name="make" id="make" class="filter-1-box">
+                        <option value=""  disabled selected> Select Maker</option>
+                        <option value="1">Option 1</option>
+                        <option value="2" >Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="model" class="label-text">Model</label>
+                    <select name="model" id="model" class="filter-1-box">
+                        <option value="" disabled selected> Select Model</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <div >
+                    <h4>Price Range per Day(pkr)</h4>
+                    <div class="price-range">
+                        <p>2500</p>
+                        <p>150000</p>
+                    </div>
+                    <input type="range" name="" id="" class="range-box">
+                    <p>Minimum range 50,000 Rs</p>
+                    <p>Maximium range 500M Rs</p>
+                </div>
+
+                <div>
+                    <label for="registration" class="label-text">Registration City</label>
+                    <select name="registration" id="registration" class="filter-1-box">
+                        <option value="" disabled selected>All</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cardocument" class="label-text">Car Document</label>
+                    <select name="cardocument" id="cardocument" class="filter-1-box">
+                        <option value="" disabled selected>All</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="transmission" class="label-text">Transmission</label>
+                    <select name="transmission" id="transmission" class="filter-1-box">
+                        <option value="" disabled selected>All</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="" class="label-text">Condition</label>
+                    <div class="button-group">
+                        <button class="button-btn">New</button>
+                        <button class="button-btn">Used</button>
+                    </div>
+                </div>
+                <div>
+                    <label for="fuel" class="label-text">Fuel</label>
+                    <div class="button-group">
+                        <button class="button-btn">Gasoline</button>   
+                        <button class="button-btn">Diesel</button>
+                        <button class="button-btn">CNG</button>
+                        <button class="button-btn">Electric</button>                        
+                        <button class="button-btn">LPG</button>                        
+                        <button class="button-btn"      >Hybrid</button>                        
+                    </div>
+                </div>
+                   <div>
+                    <button class="main-btn">Apply</button>
+                   </div>
+            </form>
+        </div>
+        <div>
+            <app-cards [CardDatas]="cardDatas"></app-cards>
+        </div>
+    </div>
+</div>

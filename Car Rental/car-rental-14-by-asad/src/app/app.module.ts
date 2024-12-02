@@ -14,6 +14,8 @@ import { HeaderComponent } from './Car Rental/Shared/component/header/header.com
 import { FooterComponent } from './Car Rental/Shared/component/footer/footer.component';
 import { HomeComponent } from './Car Rental/Shared/component/home/home.component';
 import { CardsComponent } from './Car Rental/Shared/component/cards/cards.component';
+import { VehicleListingComponent } from './Car Rental/Shared/component/vehicle-listing/vehicle-listing.component';
+import { SelectedVehicleDetailsComponent } from './Car Rental/Shared/component/selected-vehicle-details/selected-vehicle-details.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { CardsComponent } from './Car Rental/Shared/component/cards/cards.compon
     FooterComponent,
     HomeComponent,
     CardsComponent,
+    VehicleListingComponent,
+    SelectedVehicleDetailsComponent,
   
   ],
   imports: [

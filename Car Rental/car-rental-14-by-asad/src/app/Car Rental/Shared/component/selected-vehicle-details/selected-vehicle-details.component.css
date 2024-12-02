@@ -1,0 +1,231 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* main images and childs images */
+  .container-1{
+    margin: 25px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    /* justify-content: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 90px;
+  }
+  .card{
+    padding: 10px 15px 10px 20px;
+    width: 490px;
+    height: 400px;
+    border: 1px solid  transparent;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 0px;  
+  }
+  .card-1-img{
+    margin-bottom: 0px;
+  }
+.card-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-; */
+    gap: 300px;
+    
+  
+}
+.card-title{
+    font-size: 25px;
+}
+
+
+  /* Style for the stars */
+.stars {
+    display: inline-flex; 
+    align-items: center;
+    color: rgb(204, 200, 200);
+  }
+  
+  .star {
+    cursor: pointer; 
+    transition: transform 0.2s; font-size: 20px;
+    text-align: center; 
+    color: gold; 
+  }
+  
+  .star:hover {
+    transform: scale(1.2); 
+  }
+  
+.main-image {
+  
+    border-radius: 6px;
+      width: 720px;
+      height: 320px;
+      display: block;
+      margin: 0 auto 20px;
+      
+    }
+    
+    .child-images {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+  
+    }
+    
+    .child-image {
+      width: 100px;
+      height: auto;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: border 0.2s ease-in-out;
+    }
+    .card-paragraph{
+        font-size: 18px;
+    }
+.card-detail-title{
+    font-size: 16px;
+    font-weight: 600;
+    color:rgb(163, 159, 159) ;
+}
+.card-detail-content{
+    font-size: 16px;
+    font-weight: bold;
+}
+    .car-details{
+        display: flex;
+        gap: 150px;
+        text-wrap: nowrap;
+
+    }
+    .car-details-1{
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+        align-items: start;
+        gap: 30px;
+    }
+
+    .card-price-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0px 0px 0px;
+    }
+    .card-price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .card-price1{
+        margin-top: 5px;
+        font-size: 25px;
+        font-weight: 800;
+        font-weight: bold;
+    }
+    .card-price2{
+        font-size: 30px;
+        font-weight: bold;
+        font-weight: 800;
+        
+    }
+    .card-price3{
+        margin-top: 6px;
+        font-size: 16px;
+        /* font-size: small; */
+        color: rgb(163, 159, 159);
+    }
+    .card-button{
+        margin-top: 15  px;   
+        background-color: rgb(0, 81, 255);
+        color: white;
+        padding: 15px;
+        border: 1px solid transparent;
+        border-radius: 9px;
+        cursor: pointer;
+    
+    }
+    .Review-box{
+        border: 1px solid transparent;
+        background-color: #ffffff;
+        width: auto;
+        height: 480px;
+        margin: 0px 30px 30px 30px;
+        border-radius: 6px;
+        padding: 0px 20px 0px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .Review-title{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+    }
+    .Reviewbox{
+        border: 1px solid transparent;
+        border-radius: 6px;
+        padding: 5px 10px;
+        background-color: rgb(0, 81, 255);
+        color: white;
+    }
+    .Review-1{
+        display: flex;
+        align-items: center;
+    }
+    .Review-box-img img{
+        margin-right: 20px;
+
+    }
+    .card-review-content{
+        display: flex;
+        gap: 989px;
+        
+        /* justify-content: space-between; */
+    }
+    .card-detail-content2{
+        margin: 0px 0px 0px 0px;
+        font-size: 12px;
+    }
+    .Review-text{
+        font-size: 18px;
+        font-weight: 500;
+        color:rgb(163, 159, 159) ;
+        padding: 0px 20px 0px 20px;
+        margin: 0px 0px 40px 0px;
+    }
+.Review-box-link{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.Review-box-link a{
+    text-decoration: none;
+    color:rgb(31, 31, 31) ;
+}
+.Review-box-link a:hover{
+    color: rgb(1, 79, 248);
+}
+.images-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0px 0px 0px ;
+    margin: 0px 140px;
+}
+.links{
+    text-decoration: none;
+    color:  #0961e4;
+}
+.images-link a:hover{
+    color:  blue;
+
+}
+.links2{
+    text-decoration: none;
+    color: black;
+}
